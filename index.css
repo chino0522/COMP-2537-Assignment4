@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+}
+
+.information,
+.buttons {
+    text-align: center;
+    margin: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-grid {
+    border: 2px black solid;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 33.3%;
+    position: relative;
+    transition: transform 1s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+
+img {
+    width: 100%
+}
+
+.front-face,
+.back-face {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+
+.front-face {
+    transform: rotateY(180deg);
+}
